@@ -4,6 +4,7 @@ import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 import Spinner from "./components/Spinner";
 import MovieCard from "./components/MovieCard";
+import { Helmet } from "react-helmet";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_IMDB_API_KEY;
@@ -78,6 +79,15 @@ const App = () => {
   }, []);
   return (
     <main>
+      <Helmet>
+        <title>My Movie App</title>
+        <meta
+          name="description"
+          content="A movie app built with React TS and Vite"
+        />
+        <meta name="keywords" content="movies, react, vite, app" />
+        <meta name="author" content="Master-Al" />
+      </Helmet>
       <div className="pattern" />
       <div className="wrapper">
         <header>
