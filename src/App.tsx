@@ -87,6 +87,13 @@ const App = () => {
         />
         <meta name="keywords" content="movies, react, vite, app" />
         <meta name="author" content="Master-Al" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@Fafa_Al22" />
+        <meta name="twitter:creator" content="@Fafa_Al22" />
+        <meta name="twitter:image" content="/card.png" />
+        <meta property="og:site_name" content="Movie App" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/hero.png" />
       </Helmet>
       <div className="pattern" />
       <div className="wrapper">
